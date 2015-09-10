@@ -8,7 +8,15 @@
 // 1.  The heading that says "Weekly Specials"
 
 
+var headings = document.getElementsByTagName("h2");
+weeklySpecial= headings[0];
+console.log(weeklySpecial);
+
+
 // 2.  The next sibling of the item from #1.
+
+firstSpecial = headings[1];
+console.log(firstSpecial);
 
 
 // 3.  The first child of the item from #2.
