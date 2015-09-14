@@ -92,18 +92,6 @@ for (i = 0; i < hide_h3.length; i++) {
 //  2. Add "Maris" AFTER "Moonflower".  In the paragraph Say "Maris was here."
 //---------------------------------------------------------------------------------
 
-// Adding Abby---------------------------------------
-var abby_h3 = document.createElement("H3");
-var abby_h3_text = document.createTextNode("Abby");                                         
-abby_h3.appendChild(abby_h3_text);
-
-var abby_p = document.createElement("p");
-var abby_p_text = document.createTextNode("Abby is the shop mouser.");
-abby_p.appendChild(abby_p_text);
-
-add_abby = document.getElementsByTagNameNS([4], "rose");
-
-
 // Adding Maris--------------------------------------
 
 var maris_h3 = document.createElement("H3");
@@ -122,6 +110,22 @@ add_maris.insertBefore(maris_h3, add_maris.childNodes[4]);
 add_maris.insertBefore(maris_p, add_maris.childNodes[5]);
 
 console.log(add_maris);
+
+
+// Adding Abby---------------------------------------
+var abby_h3 = document.createElement("h3");
+var abby_h3_text = document.createTextNode("Abby");                                         
+abby_h3.appendChild(abby_h3_text);
+
+var abby_p = document.createElement("p");
+var abby_p_text = document.createTextNode("Abby is the shop mouser.");
+abby_p.appendChild(abby_p_text);
+
+add_abby = document.getElementById("people");
+add_abby.appendChild(abby_h3);
+add_abby.appendChild(abby_p_text);
+console.log(add_abby);
+
 
 
 
