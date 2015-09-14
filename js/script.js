@@ -75,14 +75,14 @@ for (i = 0; i < hide_h3.length; i++) {
     console.log(hideH3)
 }
 
-hide_p2 = document.getElementsByTagName("p");
-for (i =0; i < hide_p2.length; i++) {
-    hideP2 = hide_p2[i];
+// hide_p2 = document.getElementsByTagName("p");
+// for (i =0; i < hide_p2.length; i++) {
+    // hideP2 = hide_p2[i];
     
     // hideP2.nextElementSibling.setAttribute("class", "hide");
-    console.log(hideP2);
-}
-
+    // console.log(hideP2);
+// }
+ 
 
 
 
@@ -92,4 +92,16 @@ for (i =0; i < hide_p2.length; i++) {
 //  2. Add "Maris" AFTER "Moonflower".  In the paragraph Say "Maris was here."
 //---------------------------------------------------------------------------------
 
+// add_abby = document.getElementsByTagName("h3");
+
+
+
+var add_maris = document.getElementsByTagName("people")[4];
+var h3_maris = document.createElement("h3");
+var heading_maris = document.createTextNode ("Maris");
+h3_maris.appendChild(heading_maris);
+
+
+
+console.log(add_maris);
 
