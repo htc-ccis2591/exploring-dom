@@ -92,16 +92,36 @@ for (i = 0; i < hide_h3.length; i++) {
 //  2. Add "Maris" AFTER "Moonflower".  In the paragraph Say "Maris was here."
 //---------------------------------------------------------------------------------
 
-// add_abby = document.getElementsByTagName("h3");
+// Adding Abby---------------------------------------
+var abby_h3 = document.createElement("H3");
+var abby_h3_text = document.createTextNode("Abby");                                         
+abby_h3.appendChild(abby_h3_text);
+
+var abby_p = document.createElement("p");
+var abby_p_text = document.createTextNode("Abby is the shop mouser.");
+abby_p.appendChild(abby_p_text);
+
+add_abby = document.getElementsByTagNameNS([4], "rose");
 
 
+// Adding Maris--------------------------------------
 
-var add_maris = document.getElementsByTagName("people")[4];
-var h3_maris = document.createElement("h3");
-var heading_maris = document.createTextNode ("Maris");
-h3_maris.appendChild(heading_maris);
+var maris_h3 = document.createElement("H3");
+var h3_text = document.createTextNode("Maris");
+maris_h3.appendChild(h3_text);
+
+var maris_p = document.createElement("p");
+var p_text = document.createTextNode("Maris was here");
+maris_p.appendChild(p_text);
 
 
+var add_maris = document.getElementById("people");
+
+add_maris.insertBefore(maris_h3, add_maris.childNodes[4]);
+
+add_maris.insertBefore(maris_p, add_maris.childNodes[5]);
 
 console.log(add_maris);
+
+
 
