@@ -52,7 +52,7 @@ console.log(origin_h3);
 var heading = document.getElementsByTagName('h3');
 for (i = 0; i < heading.length; i++) {
     h3 = heading[i];
-//    alert(h3.textContent);
+    //    alert(h3.textContent);
 }
 
 //---------------------------------------------------------------------------------
@@ -75,14 +75,15 @@ for (i = 0; i < hide_h3.length; i++) {
     console.log(hideH3)
 }
 
-// hide_p2 = document.getElementsByTagName("p");
-// for (i =0; i < hide_p2.length; i++) {
-    // hideP2 = hide_p2[i];
+//hide_p2 = document.getElementsByTagName("p");
+//for (i = 0; i < hide_p2.length; i++) {
+//    hidep2 = hide_p2[i];
     
-    // hideP2.nextElementSibling.setAttribute("class", "hide");
-    // console.log(hideP2);
-// }
- 
+//    hidep2 = document.getElementsByTagName("p");
+//    hidep2.nextSibling.setAttribute("class", "hide");
+//    console.log(hideP2);
+//}
+
 
 
 
@@ -114,7 +115,7 @@ console.log(add_maris);
 
 // Adding Abby---------------------------------------
 var abby_h3 = document.createElement("h3");
-var abby_h3_text = document.createTextNode("Abby");                                         
+var abby_h3_text = document.createTextNode("Abby");
 abby_h3.appendChild(abby_h3_text);
 
 var abby_p = document.createElement("p");
@@ -125,7 +126,3 @@ add_abby = document.getElementById("people");
 add_abby.appendChild(abby_h3);
 add_abby.appendChild(abby_p_text);
 console.log(add_abby);
-
-
-
-
