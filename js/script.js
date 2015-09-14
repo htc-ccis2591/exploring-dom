@@ -28,7 +28,7 @@ console.log(move);
 //  5. The last child of the item from #4.
 
 var last_child = move.lastElementChild;
-console.log(last_child)
+console.log(last_child);
 
 //  6. All of the paragraphs that are children of the item from #4.
 
@@ -38,6 +38,7 @@ console.log(all_children);
 //  7. The previous sibling of the item from #4.
 
 var previous_sib = move.previousElementSibling
+console.log(previous_sib);
 
 //  8. All of the h3's that are children of the item from #7
 
@@ -51,7 +52,7 @@ console.log(origin_h3);
 var heading = document.getElementsByTagName('h3');
 for (i = 0; i < heading.length; i++) {
     h3 = heading[i];
-    alert(h3.textContent);
+//    alert(h3.textContent);
 }
 
 //---------------------------------------------------------------------------------
@@ -61,6 +62,28 @@ for (i = 0; i < heading.length; i++) {
 //        - add the class of hide to the h3
 //        - EXTRA!  - If there are two paragraphs of text, hide the second one
 // --------------------------------------------------------------------------------
+story = document.getElementsByTagName("section");
+for (i = 0; i < story.length; i++) {
+    article = story[i];
+    console.log(article);
+}
+
+hide_h3 = document.getElementsByTagName("h3");
+for (i = 0; i < hide_h3.length; i++) {
+    hideH3 = hide_h3[i];
+    hideH3.setAttribute("class", "hide");
+    console.log(hideH3)
+}
+
+hide_p2 = document.getElementsByTagName("p");
+for (i =0; i < hide_p2.length; i++) {
+    hideP2 = hide_p2[i];
+    
+    // hideP2.nextElementSibling.setAttribute("class", "hide");
+    console.log(hideP2);
+}
+
+
 
 
 //---------------------------------------------------------------------------------
