@@ -65,14 +65,14 @@ for (i = 0; i < h3s.length; i++) {
 //        - EXTRA!  - If there are two paragraphs of text, hide the second one
 // --------------------------------------------------------------------------------
 
-var article_h3 = document.getElementsByTagName("h3");
-console.log(article_h3);
-
-for (a = 0; a < article_h3.length; a++) {
-    all_article = article_h3[a]
-    all_article.setAttribute("class","hide");
-
-}
+//var article_h3 = document.getElementsByTagName("h3");
+//console.log(article_h3);
+//
+//for (a = 0; a < article_h3.length; a++) {
+//    all_article = article_h3[a]
+//    all_article.setAttribute("class","hide");
+//
+//}
 
 //---------------------------------------------------------------------------------
 //  Add two new "people" to the team by adding a new h3 followed by a paragraph.
