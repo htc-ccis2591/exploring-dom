@@ -10,31 +10,30 @@ console.log(item);
 // 1.  The heading that says "Weekly Specials"
 var headings = document.getElementsByTagName("h2").item(0); console.log(headings);
 
-
 // 2.  The next sibling of the item from #1. 
-var headings = document.getElementsByTagName("h2").item(1); console.log(headings);
+var ULunderHeadings = headings.nextElementSibling;
 
 // 3.  The first child of the item from #2.
-var headings = document.getElementsByTagName("h2").item(2); console.log(headings);
+var UlChild = ULunderHeadings.firstElementChild;
 
 //  4. The item with the id of "move".
-
-
+var idMove = document.getElementById ("move");
 
 //  5. The last child of the item from #4.
-var headings = document.getElementsByTagName("h2").item(4); console.log(headings);
+var idMoveChild = idMove.lastElementChild;
 
 //  6. All of the paragraphs that are children of the item from #4.
-var paragraphs = document.getElementsByTagName("p").item(4); console.log(paragraphs);
+var paragraphs = idMove.getElementsByTagName("p"); console.log(paragraphs);
 
 //  7. The previous sibling of the item from #4.
-
+var idItemSibling = idMove.previousElementSibling;
 
 //  8. All of the h3's that are children of the item from #7
-
+var allItemChildren = idItemSibling.getElementsByTagName("h3");
 
 //  9. Get all of the h3's and Alert (pop-up) the text from each one.  
 //     (Extra - do it all in one alert box!)
+
 
 //---------------------------------------------------------------------------------
 // 10.  Get all articles in the document.
