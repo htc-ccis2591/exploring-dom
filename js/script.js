@@ -26,7 +26,7 @@ console.log(itemMove);
 
 
 //  5. The last child of the item from #4.
-var lastSib = itemMove.lastChild;
+var lastSib = itemMove.lastElementChild;
 console.log(lastSib);
 
 
@@ -36,13 +36,13 @@ console.log(paraChildren);
 //check
 
 //  7. The previous sibling of the item from #4.
-var previousSib = itemMove.previousSibling;
+var previousSib = itemMove.previousElementSibling;
 console.log(previousSib);
 
 
 //  8. All of the h3's that are children of the item from #7
 //var childrenTypeH3s = previousSib.getElementsByTagName("h3");
-var childrenTypeH3s = itemMove.getElementsByTagName("h3");
+var childrenTypeH3s = previousSib.getElementsByTagName("h3");
 console.log(childrenTypeH3s);
 //check
 
@@ -86,13 +86,28 @@ for (i=0; i< articles.length; i++){
 var targetArea = document.getElementById("moonflower");
 console.log(targetArea);
 
+var aTargetArea = document.getElementById("people");
+//console.log(targetArea);
+
 
 //  1. Add "Abby" to the end of the list.  In the paragraph say "Abby is the shop mouser."
-
+var headAbby = document.createElement("h2");
+console.log(headAbby);
+var pAbby = document.createElement("p");
+console.log(pAbby);
+var textAbby = document.createTextNode("Abby is the shop mouser.");
+var textHeadAbby = document.createTextNode("Abby");
+console.log(textAbby);
+headAbby.appendChild(textHeadAbby)
+aTargetArea.appendChild(headAbby);
+pAbby.appendChild(textAbby);
+console.log(pAbby);
+aTargetArea.appendChild(pAbby);
+console.log(aTargetArea);
 
 //  2. Add "Maris" AFTER "Moonflower".  In the paragraph Say "Maris was here."
-//
----------------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------------
 var headMaris = document.createElement("h2");
 console.log(headMaris);
 
