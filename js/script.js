@@ -88,14 +88,23 @@ console.log(targetArea);
 
 
 //  1. Add "Abby" to the end of the list.  In the paragraph say "Abby is the shop mouser."
-var pmaris = document.createElement("p");
-console.log(pmaris);
-var textmaris = pmaris.createTextNode("Maris was here.");
-console.log(textmaris);
-targetArea.appendChild(textmaris);
-console.log(targetArea);
+
 
 //  2. Add "Maris" AFTER "Moonflower".  In the paragraph Say "Maris was here."
-//---------------------------------------------------------------------------------
+//
+---------------------------------------------------------------------------------
+var headMaris = document.createElement("h2");
+console.log(headMaris);
 
+var pmaris = document.createElement("p");
+console.log(pmaris);
+var textmaris = document.createTextNode("Maris was here.");
+var textHeadmaris = document.createTextNode("Maris");
+console.log(textHeadmaris);
+headMaris.appendChild(textHeadmaris);
+targetArea.appendChild(headMaris);
+console.log(textmaris);
+pmaris.appendChild(textmaris);
+targetArea.appendChild(pmaris);
+console.log(targetArea);
 
