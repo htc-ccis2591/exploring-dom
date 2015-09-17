@@ -48,28 +48,37 @@ console.log(hChild);
 //  9. Get all of the h3's and Alert (pop-up) the text from each one.  
 //     (Extra - do it all in one alert box!)
 
-var h3Alert = document.querySelectorAll("h3");
-console.log(h3Alert);
+var h3Alert = document.getElementsByTagName("h3");
 
-//---------------------------------------------------------------------------------
-// 10.  Get all articles in the document.
-//      Use a for loop to do the following to each one:
-//        - log it to the console
-//        - add the class of hide to the h3
-//        - EXTRA!  - If there are two paragraphs of text, hide the second one
-// --------------------------------------------------------------------------------
-var docArticles = document.querySelectorAll("p");
-console.log(docArticles);
+for (var i = 0; i < h3Alert.length; i++) {
+    h3 = h3Alert[i];
+    alert("The h3 is: " + h3.textContent);
 
-for (var i = 0; i < docArticles.length; i++){
-  console.log(docArticles[i].x);
+}
+    //---------------------------------------------------------------------------------
+    // 10.  Get all articles in the document.
+    //      Use a for loop to do the following to each one:
+    //        - log it to the console
+    //        - add the class of hide to the h3
+    //        - EXTRA!  - If there are two paragraphs of text, hide the second one
+    //--------------------------------------------------------------------------------
+var docArticles = document.getElementsByTagName("p");
+
+for(var i = 0; i < docArticles.length; i++) {
+    p = docArticles[i];
+    h3.setAttribute("class", "hide");
 }
 
-//---------------------------------------------------------------------------------
-//  Add two new "people" to the team by adding a new h3 followed by a paragraph.
-//  1. Add "Abby" to the end of the list.  In the paragraph say "Abby is the shop mouser."
-//  2. Add "Maris" AFTER "Moonflower".  In the paragraph Say "Maris was here."
-//---------------------------------------------------------------------------------
+
+    
+
+
+
+    //---------------------------------------------------------------------------------
+    //  Add two new "people" to the team by adding a new h3 followed by a paragraph.
+    //  1. Add "Abby" to the end of the list.  In the paragraph say "Abby is the shop mouser."
+    //  2. Add "Maris" AFTER "Moonflower".  In the paragraph Say "Maris was here."
+    //---------------------------------------------------------------------------------
 var para = document.createElement("h3");
 var node = document.createTextNode("Abby");
 para.appendChild(node);
@@ -84,8 +93,6 @@ para.appendChild(node);
 var element = document.getElementById("rose");
 element.appendChild(para);
 
-
-
 var para = document.createElement("h3");
 var node = document.createTextNode("Maris");
 para.appendChild(node);
@@ -99,4 +106,3 @@ para.appendChild(node);
 
 var element = document.getElementById("moonflower");
 element.appendChild(para);
-
