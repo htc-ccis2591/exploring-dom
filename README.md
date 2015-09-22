@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # JS Data Assignment
 
 ## Assignment Goals:
@@ -31,3 +32,21 @@ Item 2:
 
 ### Use the Data to Show the Features
 Use your JSON data to build and add HTML to show the two featured items in the “featured-items” div.  Create and add the HTML to the page using JavaScript.  The code that you write should be able to add any number of featured items to the page.  
+=======
+# DOM Access Assignment
+Completing this assignment depends on knowing:
+
+- basic JavaScript to create variables, work with arrays, if/else statements and for loops (Ch 3)
+- methods for selecting and navigating the DOM Tree, adding and removing attributes, creating a new element and appending it to the DOM (Ch 4)
+
+## GitHub Repository
+https://github.com/htc-ccis2591/exploring-dom
+
+You’ll want to begin each assignment by forking the repository and cloning it locally.  When you are done, you’ll push to GitHub and submit a pull request.
+
+## Moonflower’s Coffee Shop
+Open the web page in a browser.  View the elements in the Developer tools.  It makes looking at the relationships between elements easier.
+
+# Assignment
+Fill in the code requested in the JavaScript file.
+>>>>>>> 8c166d874739eec8d8d2f0ed51959e0a7f64f070

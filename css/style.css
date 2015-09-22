@@ -8,9 +8,19 @@ body {
     max-width: 800px;
 }
 
+<<<<<<< HEAD
 aside {
 	margin: 40px 20px 10px 0;
 	width: 350px;
+=======
+article p {
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+aside {
+	margin: 50px 20px 10px 0;
+	width: 225px;
+>>>>>>> 8c166d874739eec8d8d2f0ed51959e0a7f64f070
 	float: right;
     padding: 10px;
     border: 2px solid #000000;
@@ -23,7 +33,10 @@ aside img {
 section{
 	padding: 15px 25px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8c166d874739eec8d8d2f0ed51959e0a7f64f070
 article {
 	padding: 0 10px 10px;
 }
@@ -41,10 +54,17 @@ img {
 	display: none;
 }
 
+<<<<<<< HEAD
 ul {
 	padding-left: 45px;
 }
 
+=======
+
+ul {
+	padding-left: 45px;
+}
+>>>>>>> 8c166d874739eec8d8d2f0ed51959e0a7f64f070
 li {
 	padding-bottom: .25em;
 }
