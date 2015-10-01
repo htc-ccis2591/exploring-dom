@@ -11,38 +11,61 @@ var special = document.getElementsByTagName("h2")[0];
 
 // 2.  The next sibling of the item from #1.
 
-var good = document.getElementsByTagName("li")[0];
+special.nextElementSibling
 
 // 3.  The first child of the item from #2.
 
-var next = document.getElementsByTagName("li")[1];
+special.firstElementChild
 
 //  4. The item with the id of "move".
 
-var move = document.getElementById("move");
+var move = document.getElementById('move')
 
 //  5. The last child of the item from #4.
 
-var last = document.getElementById("move").lastElementChild;
+move.lastElementChild 
 
 //  6. All of the paragraphs that are children of the item from #4.
 
-var all = document.getElementById("move").lastChild;
+document.getElementById('move').getElementsByTagName('p');
 
 //  7. The previous sibling of the item from #4.
 
-var previous = document.getElementById("origin");
+move.previousElementSibling  // origin
 
 //  8. All of the h3's that are children of the item from #7
 
-var allChildren = document.getElementsByTagName("article");
+document.getElementById('origin').getElementsByTagName('p');
 
 //  9. Get all of the h3's and Alert (pop-up) the text from each one.  
 //     (Extra - do it all in one alert box!)
 
-var pop = document.getElementsByTagName("h3");
-window.alert(pop);
-//---------------------------------------------------------------------------------
+function popUp() {  
+    var pars = document.getElementById('h3') ;
+    
+    var parsCount = pars.length;
+    var i;
+    
+if(parsCount > 0) {
+    
+    for(i = 0; i < parsCount; i = i +1) {
+        
+        var dagnabbit = pars[i];
+ alert(popUp);    
+}
+
+}
+}
+
+
+//for (i = 0; i < articles.length; i++) {
+//    articles = articles[i];
+//    articles.nextSibling = function () {
+//        document.getElementsByTagName("h3")[0].setAttribute("class", "hide");
+//        articles = document.getElementsByTagName("article");
+//        articles.removeAttribute("class");
+//    }   
+////---------------------------------------------------------------------------------
 // 10.  Get all articles in the document.
 //      Use a for loop to do the following to each one:
 //        - log it to the console
@@ -50,16 +73,11 @@ window.alert(pop);
 //        - EXTRA!  - If there are two paragraphs of text, hide the second one
 // --------------------------------------------------------------------------------
 
-var articles = document.getElementsByTagName("article");
-
-for (i = 0; i < articles.length; i++) {
-    articles = articles[i];
-    articles.nextSibling = function () {
-        document.getElementsByTagName("h3")[0].setAttribute("class", "hide");
-        articles = document.getElementsByTagName("article");
-        articles.removeAttribute("class");
-    }   
-}
+//var articles = document.getElementsByTagName("article");
+//        document.getElementsByTagName("h3")[0].setAttribute("class", "hide");
+//        articles = document.getElementsByTagName("article");
+//        articles.removeAttribute("class");
+    
 
 //---------------------------------------------------------------------------------
 //  Add two new "people" to the team by adding a new h3 followed by a paragraph.
